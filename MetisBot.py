@@ -18,7 +18,7 @@ UPDATES
 async def up (ctx):
     embed=discord.Embed(title="Metis Update [SERVER]", description="We are Metis", color=0x0047ab)
     embed.set_author(name=" ")
-    embed.add_field(name="•Test", value="W", inline=False)
+    embed.add_field(name="•Test", value="E", inline=False)
     embed.add_field(name="•Discord Bot", value="added new commands", inline=True)
     embed.set_footer(text="Made By Metis")
     updateChannel = client.get_channel(475110076181512221)
