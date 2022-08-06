@@ -1,1 +1,1 @@
-worker: python MetisBot.py
+worker: python Armatus.py
