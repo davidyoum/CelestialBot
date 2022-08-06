@@ -16,11 +16,11 @@ UPDATES
 '''
 @client.command()
 async def up (ctx):
-    embed=discord.Embed(title="Metis Update [SERVER]", description="We are Metis", color=0x0047ab)
+    embed=discord.Embed(title="Armatus Update [SERVER]", description="We are Armatus", color=0x0047ab)
     embed.set_author(name=" ")
-    embed.add_field(name="•Test", value="E", inline=False)
+    embed.add_field(name="•Nice", value="E", inline=False)
     embed.add_field(name="•Discord Bot", value="added new commands", inline=True)
-    embed.set_footer(text="Made By Metis")
+    embed.set_footer(text="Made By ArmatusDevTeam")
     updateChannel = client.get_channel(475110076181512221)
     await updateChannel.send(embed=embed)
 
@@ -29,7 +29,7 @@ HELP
 '''
 @client.command()
 async def help(ctx):
-    embed = discord.Embed(title="MetisBot Help", description="Commands: ", color=0x0047AB)
+    embed = discord.Embed(title="ArmatusBot Help", description="Commands: ", color=0x0047AB)
     embed.add_field(name="/help", value="Shows Commands For Bot", inline=False)
     embed.add_field(name="/clear [number of messages]", value="Clears 'x' Amount of Messages", inline=False)
     embed.add_field(name="/kick [username] [reason]", value="Kicks user from server", inline=False)
@@ -43,9 +43,9 @@ START UP
 '''
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Game("MetisBot | .help"))
+    await client.change_presence(activity=discord.Game("ArmatusBot | .help"))
 
-    embed=discord.Embed(title="Metis.", description="The bot is up and running.", color=0x0047AB).set_footer(text="Made By Metis")
+    embed=discord.Embed(title="Armatus.", description="The bot is up and running.", color=0x0047AB).set_footer(text="Made By ArmatusDevTeam")
     logchannel = client.get_channel(478314520893325322)
     await logchannel.send(embed=embed)
 
@@ -54,13 +54,13 @@ MEMBER JOIN AND LEAVE MESSAGE
 '''
 @client.event
 async def on_member_join(member):
-    embed=discord.Embed(title="Welcome to Metis.", description=f"Hello, {member.mention}. Welcome to Metis where we are Metis.", color=0x0047AB).set_footer(text="Made By Metis")
+    embed=discord.Embed(title="Welcome to Armatus.", description=f"Hello, {member.mention}. Welcome to Armatus where we are Armatus.", color=0x0047AB).set_footer(text="Made By ArmatusDevTeam")
     welcomeLeaveChannel = client.get_channel(792980247498588222)
     await welcomeLeaveChannel.send(embed=embed)
 
 @client.event
 async def on_member_remove(member):
-    embed=discord.Embed(title="Someone has left Metis.", description=f"{member.mention}, has left.", color=0x0047AB).set_footer(text="Made By Metis")
+    embed=discord.Embed(title="Someone has left Armatus.", description=f"{member.mention}, has left.", color=0x0047AB).set_footer(text="Made By ArmatusDevTeam")
     welcomeLeaveChannel = client.get_channel(792980247498588222)
     await welcomeLeaveChannel.send(embed=embed)
 
