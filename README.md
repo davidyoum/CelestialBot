@@ -1,7 +1,6 @@
-# ArmatusBot
+# CelestialBot
 
 **The only bot you'll ever need.**
-
 
 ## Features:
 
